@@ -48,6 +48,27 @@
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+background-color: rgb(123, 231, 255);
+border: 2px solid #000000;
+border-radius: 15px;
+}
+QPushButton:hover {
+background-color: rgb(20, 160, 150);
+border: 2px solid #000000;
+border-radius: 15px;
+}
+
+QPushButton:pressed {
+background-color: rgb(10, 10, 10);
+border: 2px solid #000000;
+border-radius: 15px;
+}
+
+
+</string>
+        </property>
         <property name="text">
          <string>Старт</string>
         </property>
