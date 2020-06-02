@@ -2,8 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QTimer>
-#include <QTime>
+#include "dialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,12 +18,9 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    QTime start_time;
-    QTimer *timeo;
+    Dialog *nwindow;
 
 private slots:
-    void StartTimer();
-    void StopTimer();
-    void update();
+    void show_dialog();
 };
 #endif // MAINWINDOW_H
